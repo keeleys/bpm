@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - 14
+cache: npm
+branches:
+  only:
+    - main
+
+script: yarn run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  token: $GH_TOKEN
+  keep_history: true
+  on:
+    branch: main
+  local_dir: dist
