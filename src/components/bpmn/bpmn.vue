@@ -52,11 +52,6 @@ export default {
               targetNamespace="http://www.activiti.org/testm1577635100724"
             >
             <process id="process" processType="None" isClosed="false" isExecutable="true">
-              <extensionElements>
-                <camunda:properties>
-                  <camunda:property name="a" value="1" />
-                </camunda:properties>
-              </extensionElements>
               <startEvent id="_2" name="start" />
             </process>
             <bpmndi:BPMNDiagram id="BPMNDiagram_leave">
