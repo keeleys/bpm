@@ -9,7 +9,7 @@ import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-codes.css'
 import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css'
 
 // 左边工具栏以及编辑节点的样式
-import 'bpmn-js-properties-panel/dist/assets/bpmn-js-properties-panel.css'
+import 'bpmn-js-properties-panel-keeley/dist/assets/bpmn-js-properties-panel.css'
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';

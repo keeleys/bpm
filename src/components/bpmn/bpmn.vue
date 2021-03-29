@@ -25,10 +25,10 @@
 <script>
 import BpmnModeler from "bpmn-js/lib/Modeler";
 // 工具栏相关
-import propertiesProviderModule from "bpmn-js-properties-panel/lib/provider/camunda";
-import propertiesPanelModule from "bpmn-js-properties-panel";
-import camundaModdleDescriptor from "camunda-bpmn-moddle/resources/camunda";
+import propertiesPanelModule from "bpmn-js-properties-panel-keeley";
+import propertiesProviderModule from "bpmn-js-properties-panel-keeley/lib/provider/activiti";
 
+import activitiModdleDescriptor from 'activiti-bpmn-moddle/resources/activiti'
 // 汉化
 import customTranslate from "./customTranslate";
 
@@ -175,13 +175,13 @@ export default {
         },
         additionalModules: [
           // 工具栏模块
-          propertiesProviderModule,
           propertiesPanelModule,
+          propertiesProviderModule,
           // 汉化模块
           customTranslateModule
         ],
         moddleExtensions: {
-          camunda: camundaModdleDescriptor
+          activiti: activitiModdleDescriptor
         }
       });
 
